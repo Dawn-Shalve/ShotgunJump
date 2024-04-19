@@ -3,7 +3,7 @@
 name: CI
 
 env:
-  GODOT_VERSION: 3.3.3
+  GODOT_VERSION: 4.1.2
   
 # Controls when the workflow will run
 on:
@@ -50,4 +50,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main # The branch the action should deploy to.
-          FOLDER: build/web # The folder the action should deploy.
+          FOLDER: / # The folder the action should deploy.
